@@ -5,7 +5,7 @@
 function highlight(table) {
     for (i = 1; i < table.rows.length; i++) {
         if (!(table.rows[i].lastElementChild.dataset.hasOwnProperty('available'))) {
-            table.rows[i].setAttribute('id', 'hidden');
+            table.rows[i].setAttribute('hidden', 'true');
         } 
          else (table.rows[i].lastElementChild.dataset.available === 'true') ? table.rows[i].classList.add('available') : table.rows[i].classList.add('unavailable')
     }
